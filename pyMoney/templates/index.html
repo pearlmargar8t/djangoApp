@@ -1,0 +1,271 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!--Home begins here-->
+<div class="hero vh-100 d-flex align-items-center " id="Home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mx-auto text-center">
+                <h1 class="display-4 text-white">
+                    Send money 24/7 to all networks
+                </h1>
+                <p class="text-white my-3">
+                    Whether you need to send money to buddies down the street or
+                    family across the country, pyMoney does it swiftly and securely.
+                </p>
+                <a href="#" class="btn btn-primary me-2 rounded-pill">Send Money</a>
+                <a href="#" class="btn btn-outline-light rounded-pill" data-bs-toggle="modal"
+                   data-bs-target="#mysignup">Sign
+                    Up</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Home ends here-->
+
+<!--services us starts here-->
+<section class="section" id="Services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mb-4 mx-auto text-center">
+                <h6 class="text-primary">SERVICES</h6>
+                <h1>Our Services</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore,
+                    provident minima veniam dolorum nemo corporis enim nihil
+                    consequuntur temporibus quasi facere quidem autem eprehenderit
+                    tempora est voluptate rerum omnis eaque?
+                </p>
+
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='bx bxs-wallet-alt'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Momo</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rem eveniet officiis
+                            quisquam nemo
+                            fuga.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='bx bxs-compass'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Bill payment</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rem eveniet officiis
+                            quisquam nemo
+                            fuga.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox">
+                            <i class='bx bx-support'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Bank Transfer</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, rem eveniet officiis
+                            quisquam nemo
+                            fuga.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--services section ends here-->
+
+<!--offers section-->
+<section class="row w-100 py-0 bg-light" id="Offers">
+    <div class="col-lg-6 col-img"></div>
+    <div class="col-lg-6 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <h6 class="text-primary">Offers</h6>
+                    <h1>Customer offers</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eligendi recusandae laboriosam
+                        enim quidem!
+                        Impedit accusantium quam eaque fugit obcaecati deserunt ad.
+                    </p>
+
+                    <div class="offers d-flex mt-5">
+                        <div class="iconbox me-3">
+                            <i class='bx bx-check'></i>
+                        </div>
+                        <div>
+                            <h5>Send 1000 cedis for free.</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus laboriosam sequi
+                                expedita..
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="offers d-flex">
+                        <div class="iconbox me-3">
+                            <i class='bx bxs-share-alt'></i>
+                        </div>
+                        <div>
+                            <h5>Invite a friend & earn no-fee on transfer</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore!.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offers d-flex ">
+                        <div class="iconbox me-3">
+                            <i class='bx bxs-coin-stack'></i>
+                        </div>
+                        <div>
+                            <h5>Earn monthly interest on all transfers</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,fuga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Offers end here-->
+
+<!--sign up modal-->
+<div class="container ">
+    <div class="row justify-items-center">
+        <div class="col">
+            <div class="modal fade" id="mysignup">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="model-header">
+                            <h3 class="modal-title mt-5 text-center ">Create your pyMoney account</h3>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="py-2 col-md-12">
+                                    <input type="text" class="form-control" placeholder="Enter Full Name">
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <input type="text" class="form-control" placeholder="Enter Username">
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <input type="text" class="form-control" placeholder="Enter phone number">
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <select aria-label="Default select example" class="form-select">
+                                        <option selected>
+                                            select network carrier
+                                        </option>
+                                        <option value="1">MTN</option>
+                                        <option value="2">Tigo</option>
+                                        <option value="3">Airtel</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <input type="text" class="form-control" placeholder=" Enter Password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-primary me-auto mt-2 col-md-12 d-grid" href="#" role="button">Register</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--Sign up end-->
+
+<!--login Modal-->
+
+<div class="container ">
+    <div class="row justify-items-center">
+        <div class="col">
+            <div class="modal fade" id="mylogin">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="model-header">
+                            <h3 class="modal-title mt-5 text-center ">Login to your pyMoney account</h3>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="col-md-12 mt-2">
+                                    <input type="text" class="form-control" placeholder="Enter Username">
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <input type="text" class="form-control" placeholder=" Enter Password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer ">
+                            <div class="form-check form-switch pb-1 me-auto">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                       id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Remember my email
+                                    address</label>
+                            </div>
+                            <a class="btn btn-primary  me-auto mt-2 col-md-12 d-grid" href="#" role="button">Sign in</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--login Modal ends-->
+
+
+    <!--contact us starts here-->
+
+    <section class="section" id="Contact us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mb-4 mx-auto text-center">
+                    <h6 class="text-primary">Contact us</h6>
+                    <h1>Get In touch</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+                    </p>
+                </div>
+            </div>
+
+            <form action="" class="row g-3 justify-content-center">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" placeholder="Enter Subject">
+                </div>
+                <div class="col-md-10">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Enter Message"
+                              class="form-control"></textarea>
+                </div>
+                <div class="col-md-10 d-grid">
+                    <button class="btn btn-primary">Contact</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--contact ends here-->
+
+{% endblock %}
