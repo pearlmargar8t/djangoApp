@@ -140,14 +140,30 @@
       background-repeat: no-repeat;
       min-height: 500px;
     }
+    .mylogin {
+	    background-image: url('/static/media/pexels-andrea-piacquadio-3762940.jpg');
+	    background-position: center;
+	    background-size: cover;
+	    background-attachment: fixed;
+	    position: relative;
+	    z-index: 2;
+}
 
+    .mylogin::after {
+	    content: "";
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    background-color: rgb(21, 20, 51, 0.7);
+	    z-index: -1;
+}
 
     form input .form-control,
     .form-select {
       height: 56px;
     }
-
-
 
     form .form-control,
     .form-select {
@@ -170,6 +186,7 @@
       color: white;
     }
 
-    .footer-bottom {
-      background-color: #242933;
+     .footer-bottom {
+        background-color: #242933;
     }
+

@@ -1,7 +1,8 @@
-{% extends 'base.html' %}
+{% extends 'base.html'%}
+
 {% load static %}
 
-{% block content %}
+{%block content%}
 <!--Home begins here-->
 <div class="hero vh-100 d-flex align-items-center " id="Home">
     <div class="container">
@@ -37,13 +38,12 @@
                     consequuntur temporibus quasi facere quidem autem eprehenderit
                     tempora est voluptate rerum omnis eaque?
                 </p>
-
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-sm-6">
                     <div class="service card-effect">
                         <div class="iconbox">
-                            <i class='bx bxs-wallet-alt'></i>
+                            <i class="bi bi-wallet2"></i>
                         </div>
                         <h5 class="mt-4 mb-2">Momo</h5>
                         <p>
@@ -56,7 +56,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="service card-effect">
                         <div class="iconbox">
-                            <i class='bx bxs-compass'></i>
+                            <i class="bi bi-receipt"></i>
                         </div>
                         <h5 class="mt-4 mb-2">Bill payment</h5>
                         <p>
@@ -69,7 +69,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="service card-effect">
                         <div class="iconbox">
-                            <i class='bx bx-support'></i>
+                            <i class='bx bx-transfer'></i>
                         </div>
                         <h5 class="mt-4 mb-2">Bank Transfer</h5>
                         <p>
@@ -96,7 +96,8 @@
                     <h1>Customer offers</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eligendi recusandae laboriosam
-                        enim quidem!
+                        enim
+                        quidem!
                         Impedit accusantium quam eaque fugit obcaecati deserunt ad.
                     </p>
 
@@ -147,10 +148,10 @@
     <div class="row justify-items-center">
         <div class="col">
             <div class="modal fade" id="mysignup">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="model-header">
-                            <h3 class="modal-title mt-5 text-center ">Create your pyMoney account</h3>
+                            <h3 class="modal-title pt-2 text-center ">Create your pyMoney account</h3>
                         </div>
                         <div class="modal-body">
                             <form>
@@ -201,7 +202,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="model-header">
-                            <h3 class="modal-title mt-5 text-center ">Login to your pyMoney account</h3>
+                            <h3 class="modal-title pt-2 text-center ">Login to your pyMoney account</h3>
                         </div>
                         <div class="modal-body">
                             <form>
@@ -213,14 +214,22 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="modal-footer ">
+                        <div class="modal-footer col-md-12 my-2 ">
                             <div class="form-check form-switch pb-1 me-auto">
                                 <input class="form-check-input" type="checkbox" role="switch"
                                        id="flexSwitchCheckDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Remember my email
-                                    address</label>
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Remember me</label>
                             </div>
-                            <a class="btn btn-primary  me-auto mt-2 col-md-12 d-grid" href="#" role="button">Sign in</a>
+                            <a href="#!">Forgot password?</a>
+                            <div class="me-auto col-md-12 mt-3" style="width: 250px; font-weight: 10;">
+
+                                <a class="btn btn-primary me-auto my-3 col-md-12 d-grid" href="#" role="button">Sign
+                                    in</a>
+
+                                <a class=" text-decoration-underline mt-2" href="#" data-bs-toggle="modal"
+                                   data-bs-target="#mysignup">
+                                    Sign up</a>
+                            </div>
                         </div>
                     </div>
 
@@ -229,43 +238,45 @@
         </div>
     </div>
 
-    <!--login Modal ends-->
+</div>
+
+<!--login Modal ends-->
 
 
-    <!--contact us starts here-->
+<!--contct us starts here-->
 
-    <section class="section" id="Contact us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mb-4 mx-auto text-center">
-                    <h6 class="text-primary">Contact us</h6>
-                    <h1>Get In touch</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
-                    </p>
-                </div>
+<section class="section" id="Contact us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mb-4 mx-auto text-center">
+                <h6 class="text-primary">Contact us</h6>
+                <h1>Get In touch</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+                </p>
             </div>
-
-            <form action="" class="row g-3 justify-content-center">
-                <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Full Name">
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="form-control" placeholder="Email">
-                </div>
-                <div class="col-md-10">
-                    <input type="text" class="form-control" placeholder="Enter Subject">
-                </div>
-                <div class="col-md-10">
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Enter Message"
-                              class="form-control"></textarea>
-                </div>
-                <div class="col-md-10 d-grid">
-                    <button class="btn btn-primary">Contact</button>
-                </div>
-            </form>
         </div>
-    </section>
-    <!--contact ends here-->
 
-{% endblock %}
+        <form action="" class="row g-3 justify-content-center">
+            <div class="col-md-5">
+                <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="col-md-5">
+                <input type="text" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-md-10">
+                <input type="text" class="form-control" placeholder="Enter Subject">
+            </div>
+            <div class="col-md-10">
+                <textarea name="" id="" cols="30" rows="5" placeholder="Enter Message" class="form-control"></textarea>
+            </div>
+            <div class="col-md-10 d-grid">
+                <button class="btn btn-primary">Contact</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!--contct ends here-->
+
+
+{%endblock%}
