@@ -16,8 +16,7 @@
                     family across the country, pyMoney does it swiftly and securely.
                 </p>
                 <a href="#" class="btn btn-primary me-2 rounded-pill">Send Money</a>
-                <a href="#" class="btn btn-outline-light rounded-pill" data-bs-toggle="modal"
-                   data-bs-target="#mysignup">Sign
+                <a href="{% url 'signup' %}" class="btn btn-outline-light rounded-pill" >Sign
                     Up</a>
             </div>
         </div>
@@ -142,106 +141,6 @@
     </div>
 </section>
 <!--Offers end here-->
-
-<!--sign up modal-->
-<div class="container ">
-    <div class="row justify-items-center">
-        <div class="col">
-            <div class="modal fade" id="mysignup">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="model-header">
-                            <h3 class="modal-title pt-2 text-center ">Create your pyMoney account</h3>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="py-2 col-md-12">
-                                    <input type="text" class="form-control" placeholder="Enter Full Name">
-                                </div>
-                                <div class="col-md-12 mt-2">
-                                    <input type="text" class="form-control" placeholder="Enter Username">
-                                </div>
-                                <div class="col-md-12 mt-2">
-                                    <input type="text" class="form-control" placeholder="Enter phone number">
-                                </div>
-                                <div class="col-md-12 mt-2">
-                                    <select aria-label="Default select example" class="form-select">
-                                        <option selected>
-                                            select network carrier
-                                        </option>
-                                        <option value="1">MTN</option>
-                                        <option value="2">Tigo</option>
-                                        <option value="3">Airtel</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-12 mt-2">
-                                    <input type="text" class="form-control" placeholder=" Enter Password">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <a class="btn btn-primary me-auto mt-2 col-md-12 d-grid" href="#" role="button">Register</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-<!--Sign up end-->
-
-<!--login Modal-->
-
-<div class="container ">
-    <div class="row justify-items-center">
-        <div class="col">
-            <div class="modal fade" id="mylogin">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="model-header">
-                            <h3 class="modal-title pt-2 text-center ">Login to your pyMoney account</h3>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="col-md-12 mt-2">
-                                    <input type="text" class="form-control" placeholder="Enter Username">
-                                </div>
-                                <div class="col-md-12 mt-2">
-                                    <input type="text" class="form-control" placeholder=" Enter Password">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer col-md-12 my-2 ">
-                            <div class="form-check form-switch pb-1 me-auto">
-                                <input class="form-check-input" type="checkbox" role="switch"
-                                       id="flexSwitchCheckDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Remember me</label>
-                            </div>
-                            <a href="#!">Forgot password?</a>
-                            <div class="me-auto col-md-12 mt-3" style="width: 250px; font-weight: 10;">
-
-                                <a class="btn btn-primary me-auto my-3 col-md-12 d-grid" href="#" role="button">Sign
-                                    in</a>
-
-                                <a class=" text-decoration-underline mt-2" href="#" data-bs-toggle="modal"
-                                   data-bs-target="#mysignup">
-                                    Sign up</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<!--login Modal ends-->
-
 
 <!--contct us starts here-->
 
